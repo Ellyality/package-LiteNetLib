@@ -1,6 +1,8 @@
-# LiteNetLib
+# LiteNetLib Fork By Elly
 
 Lite reliable UDP library for .NET Standard 2.0 (Mono, .NET Core, .NET Framework)
+
+Added a unity component for easy use
 
 [![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)
 
@@ -116,3 +118,14 @@ while (!Console.KeyAvailable)
 }
 server.Stop();
 ```
+
+## Usage samples (Fork)
+
+Here is the component screenshot for the plugin\
+There will be only two component exist, one for server another one for client
+
+Component Path: Ellyality/Network/UDP Client\
+![CLIENT](Docs/UDPClient.png)
+
+Component Path: Ellyality/Network/UDP Client\
+![SERVER](Docs/UDPServer.png)

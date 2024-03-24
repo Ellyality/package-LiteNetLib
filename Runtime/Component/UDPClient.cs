@@ -13,9 +13,10 @@ namespace Elly.LiteNetLib
         [SerializeField][Tooltip("It will trigger Debug.Log after received events")] bool Log = true;
         [SerializeField][Tooltip("It will be the key it submit to the udp server")] string Key = "TestKey";
         [SerializeField][Tooltip("Server use port")] int Port = 9055;
-        [SerializeField] bool BroadcastUtilConnect = true;
-        [SerializeField] bool AutoConnectByBroadcastFeedback = true;
-        [SerializeField] bool StartAtBegining = true;
+        [SerializeField][Tooltip("If there is not peer happening, then it will keep sending broadcasting signal out")] bool BroadcastUtilConnect = true;
+        [SerializeField][Tooltip("If received server's feedback and client hasn't connect to any server, " +
+            "it will trying to connect the remote where it send the feedback")] bool AutoConnectByBroadcastFeedback = true;
+        [SerializeField][Tooltip("It will call StartClient")] bool StartAtBegining = true;
         [Header("Config")]
         [SerializeField] bool BroadcastReceiveEnabled = false;
         [SerializeField] bool UnconnectedMessagesEnabled = true;

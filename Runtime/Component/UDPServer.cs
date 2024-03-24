@@ -14,8 +14,8 @@ namespace Elly.LiteNetLib
         [SerializeField] [Tooltip("It will trigger Debug.Log after received events")] bool Log = true;
         [SerializeField] [Tooltip("If leave empty, it will accept any connection, if not, it will check if key is matching")] string Key = "TestKey";
         [SerializeField] [Tooltip("Server use port")] int Port = 9055;
-        [SerializeField] bool AutoConnectBroadcastClient = true;
-        [SerializeField] bool StartAtBegining = true;
+        [SerializeField] [Tooltip("Send feedback for the broadcast message, let client know where the server is")] bool AutoConnectBroadcastClient = true;
+        [SerializeField] [Tooltip("It will call StartServer")] bool StartAtBegining = true;
         [Header("Config")]
         [SerializeField] bool BroadcastReceiveEnabled = true;
         [SerializeField] bool UnconnectedMessagesEnabled = true;
